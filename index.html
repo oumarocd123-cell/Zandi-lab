@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Zandi Virology Lab at Morehouse School of Medicine — investigating emerging viral pathogens and developing antiviral strategies." />
+  <title>Zandi Virology Lab | Morehouse School of Medicine</title>
+
+  <!-- Favicon (uses the same placeholder logo) -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Fonts: Instrument Serif (display) + IBM Plex Sans (body) + IBM Plex Mono (accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ====================================================================
+       NAVIGATION
+       Same on every page. To change nav text or add a link, update here AND
+       on about.html, team.html, contact.html. The `is-active` class marks
+       the current page so its underline stays visible.
+  ===================================================================== -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Zandi Virology Lab — Home">
+        <img src="assets/logo.svg" alt="" aria-hidden="true" />
+        <span>Zandi Lab</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ====================================================================
+       HERO
+       The intro page shows the lab logo + name. To change the tagline,
+       edit the <p class="hero-tagline"> line below.
+  ===================================================================== -->
+  <header class="hero">
+    <div class="hero-decor" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <img src="assets/logo.svg" alt="Zandi Virology Lab logo" class="hero-logo" />
+
+      <h1>
+        Zandi Virology <em>Lab</em>
+      </h1>
+
+      <p class="hero-tagline">
+        Morehouse School of Medicine <span>·</span> Atlanta, Georgia
+      </p>
+    </div>
+
+    <a href="about.html" class="hero-scroll" aria-label="Learn more about the lab">
+      Explore the lab
+    </a>
+  </header>
+
+
+  <!-- ====================================================================
+       FOOTER
+       Same on every page.
+  ===================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; <span id="year"></span> Zandi Virology Lab · Morehouse School of Medicine</span>
+      <span><a href="contact.html">Contact the lab &rarr;</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-update the copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

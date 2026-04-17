@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!--
+    Placeholder logo for Zandi Virology Lab.
+    Stylized virus particle with a "Z" monogram at the center.
+    Replace this file with the lab's official logo when available — keep the
+    filename as logo.svg so it loads automatically, or update references in
+    index.html, about.html, team.html, contact.html and styles.css.
+  -->
+
+  <!-- Spike proteins (small dots arranged around the capsid) -->
+  <g fill="#3C4F85">
+    <circle cx="100" cy="18" r="4.5"/>
+    <circle cx="141" cy="27" r="4.5"/>
+    <circle cx="173" cy="59" r="4.5"/>
+    <circle cx="182" cy="100" r="4.5"/>
+    <circle cx="173" cy="141" r="4.5"/>
+    <circle cx="141" cy="173" r="4.5"/>
+    <circle cx="100" cy="182" r="4.5"/>
+    <circle cx="59" cy="173" r="4.5"/>
+    <circle cx="27" cy="141" r="4.5"/>
+    <circle cx="18" cy="100" r="4.5"/>
+    <circle cx="27" cy="59" r="4.5"/>
+    <circle cx="59" cy="27" r="4.5"/>
+  </g>
+
+  <!-- Connecting stalks from capsid to spikes -->
+  <g stroke="#3C4F85" stroke-width="1.5" stroke-linecap="round">
+    <line x1="100" y1="36" x2="100" y2="23"/>
+    <line x1="130" y1="45" x2="138" y2="31"/>
+    <line x1="155" y1="70" x2="168" y2="62"/>
+    <line x1="164" y1="100" x2="177" y2="100"/>
+    <line x1="155" y1="130" x2="168" y2="138"/>
+    <line x1="130" y1="155" x2="138" y2="169"/>
+    <line x1="100" y1="164" x2="100" y2="177"/>
+    <line x1="70" y1="155" x2="62" y2="169"/>
+    <line x1="45" y1="130" x2="32" y2="138"/>
+    <line x1="36" y1="100" x2="23" y2="100"/>
+    <line x1="45" y1="70" x2="32" y2="62"/>
+    <line x1="70" y1="45" x2="62" y2="31"/>
+  </g>
+
+  <!-- Capsid (main body) -->
+  <circle cx="100" cy="100" r="64" stroke="#3C4F85" stroke-width="2" fill="#FAF8F3"/>
+  <circle cx="100" cy="100" r="64" stroke="#3C4F85" stroke-width="0.5" fill="none" opacity="0.4" transform="rotate(15 100 100)" stroke-dasharray="2 4"/>
+
+  <!-- Z monogram -->
+  <path d="M 72 78 L 128 78 L 82 128 L 128 128"
+        stroke="#3C4F85"
+        stroke-width="6"
+        stroke-linecap="square"
+        stroke-linejoin="miter"
+        fill="none"/>
+
+  <!-- Accent dot (gold) -->
+  <circle cx="128" cy="78" r="4" fill="#E8CB4A"/>
+</svg>

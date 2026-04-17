@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact the Zandi Virology Lab at Morehouse School of Medicine." />
+  <title>Contact | Zandi Virology Lab</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================ NAVIGATION ============================ -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="Zandi Virology Lab — Home">
+        <img src="assets/logo.svg" alt="" aria-hidden="true" />
+        <span>Zandi Lab</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html" class="is-active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================ PAGE HEADER ============================ -->
+  <header class="page-header">
+    <div class="container">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Reach out to the lab.</h1>
+      <p class="lead">
+        Prospective trainees, collaborators, and members of the community are
+        welcome to contact us. Use the form below or reach out directly.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- ============================ CONTACT + FORM ============================ -->
+  <section>
+    <div class="container">
+
+      <div class="contact-layout">
+
+        <!-- LEFT: Contact details. Edit the values below. -->
+        <div class="contact-info">
+          <dl>
+            <div>
+              <dt>Principal Investigator</dt>
+              <dd>Dr. Keivan Zandi, Ph.D.</dd>
+            </div>
+
+            <div>
+              <dt>Email</dt>
+              <!-- EDIT: replace with real lab email -->
+              <dd><a href="mailto:lab-email@msm.edu">lab-email@msm.edu</a></dd>
+            </div>
+
+            <div>
+              <dt>Phone</dt>
+              <!-- EDIT: replace with real lab phone -->
+              <dd><a href="tel:+14047521500">(404) 752&ndash;1500</a></dd>
+            </div>
+
+            <div>
+              <dt>Mailing Address</dt>
+              <dd>
+                <!-- EDIT: replace with real lab address / building / room -->
+                Zandi Virology Lab<br />
+                Morehouse School of Medicine<br />
+                720 Westview Drive SW<br />
+                Atlanta, GA 30310
+              </dd>
+            </div>
+
+            <div>
+              <dt>Prospective Trainees</dt>
+              <dd>
+                We accept applications from graduate students, postdoctoral
+                fellows, and undergraduates interested in virology research.
+                Please include a CV and a short note describing your research
+                interests.
+              </dd>
+            </div>
+          </dl>
+        </div>
+
+
+        <!-- RIGHT: Google Form embed. Replace the placeholder block with the iframe
+             from your Google Form ("Send" → embed HTML). -->
+        <div class="form-wrapper">
+          <h3>Send us a message</h3>
+          <p>
+            Use the form to tell us about your interest in the lab, and we'll
+            get back to you within a few business days.
+          </p>
+
+          <div class="form-embed">
+            <!--
+              =====================  HOW TO ADD YOUR GOOGLE FORM  =====================
+              1. Open your Google Form in a browser.
+              2. Click the "Send" button (top-right).
+              3. Click the "<>" (embed) icon.
+              4. Copy the <iframe src="..."></iframe> tag Google provides.
+              5. DELETE the <p class="placeholder-note"> block directly below
+                 and PASTE your iframe in its place.
+              6. Keep the width="100%" attribute so it fits the container.
+              ========================================================================
+            -->
+
+            <p class="placeholder-note">
+              <strong>Placeholder: Google Form goes here</strong>
+              Follow the instructions inside the HTML comment in this file to
+              embed your form. Until then, visitors can use the email or phone
+              number on the left.
+            </p>
+
+            <!-- EXAMPLE (uncomment and replace src with your form's embed URL):
+            <iframe
+              src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+              width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+              Loading&hellip;
+            </iframe>
+            -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; <span id="year"></span> Zandi Virology Lab · Morehouse School of Medicine</span>
+      <span><a href="index.html">Back to top &uarr;</a></span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
