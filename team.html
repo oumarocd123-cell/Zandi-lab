@@ -1,98 +1,145 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Meet the members of the Zandi Virology Lab at Morehouse School of Medicine." />
-  <title>Team | Zandi Virology Lab</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Meet the members of the Zandi Virology Lab at Morehouse School of Medicine." name="description"/>
+<title>Team | Zandi Virology Lab</title>
+<link href="assets/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@300;400;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<style>
+  .member-bio {
+    position: relative;
+    line-height: 1.55;
+  }
 
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  .member-bio.is-collapsed {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  .bio-toggle {
+    margin-top: 0.75rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.75;
+  }
 
-  <link rel="stylesheet" href="css/styles.css" />
+  .bio-toggle:hover,
+  .bio-toggle:focus {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  .bio-toggle.is-hidden {
+    display: none;
+  }
+
+  /* Keep member photos inside the circular bubble */
+  .member-photo,
+  .pi-photo {
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .member-photo img,
+  .pi-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+  }
+
+  .member-photo > span,
+  .pi-photo > span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
 </head>
 <body>
-
-  <!-- ============================ NAVIGATION ============================ -->
-  <nav class="site-nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand" aria-label="Zandi Virology Lab — Home">
-        <img src="assets/logo.svg" alt="" aria-hidden="true" />
-        <span>Zandi Lab</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="team.html" class="is-active">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-
-  <!-- ============================ PAGE HEADER ============================ -->
-  <header class="page-header">
-    <div class="container">
-      <span class="eyebrow">Our people</span>
-      <h1>The team behind the science.</h1>
-      <p class="lead">
+<!-- ============================ NAVIGATION ============================ -->
+<nav class="site-nav">
+<div class="nav-inner">
+<a aria-label="Zandi Virology Lab — Home" class="nav-brand" href="index.html">
+<img alt="" aria-hidden="true" src="assets/logo.svg"/>
+<span>Zandi Lab</span>
+</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a class="is-active" href="team.html">Team</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+<!-- ============================ PAGE HEADER ============================ -->
+<header class="page-header">
+<div class="container">
+<span class="eyebrow">Our people</span>
+<h1>The team behind the science.</h1>
+<p class="lead">
         A group of scientists, trainees, and students committed to rigorous
         virological research at Morehouse School of Medicine.
       </p>
-    </div>
-  </header>
-
-
-  <!-- ============================ PRINCIPAL INVESTIGATOR ============================ -->
-  <section>
-    <div class="container">
-
-      <!-- EDIT: Replace the initials, name, title, and bio below with Dr. Zandi's details.
+</div>
+</header>
+<!-- ============================ PRINCIPAL INVESTIGATOR ============================ -->
+<section>
+<div class="container">
+<!-- EDIT: Replace the initials, name, title, and bio below with Dr. Zandi's details.
                  To use a real photo, replace the <div class="pi-photo"> block with:
                  <img class="pi-photo" src="assets/zandi.jpg" alt="Dr. Keivan Zandi" />
                  (and add the image file to the assets/ folder).
       -->
-      <article class="pi-card">
-        <div class="pi-photo">
-          <span>KZ</span>
-        </div>
-
-        <div class="pi-info">
-          <span class="eyebrow">Principal Investigator</span>
-          <h2>Dr. Keivan Zandi, Ph.D.</h2>
-          <span class="pi-title">Principal Investigator · Morehouse School of Medicine</span>
-
-          <p>
+<article class="pi-card">
+<div class="pi-photo">
+<span><img src="assets/KeivanZandi.jpg" alt=""></span>
+</div>
+<div class="pi-info">
+<span class="eyebrow">Principal Investigator</span>
+<h2>Dr. Keivan Zandi, Ph.D.</h2>
+<span class="pi-title">Principal Investigator · Morehouse School of Medicine</span>
+<p>
             Dr. Zandi leads the Virology Lab at Morehouse School of Medicine.
             His research focuses on [EDIT: brief research focus — e.g., the
             development of novel antiviral therapeutics and the molecular
             characterization of emerging viral pathogens].
           </p>
-          <p>
+<p>
             [EDIT: Add a sentence about background, training, or honors. e.g.
-            Prior to joining MSM, Dr. Zandi completed his training at &hellip;
+            Prior to joining MSM, Dr. Zandi completed his training at …
             He has authored more than [N] peer-reviewed publications and has
-            been supported by funding from &hellip;]
+            been supported by funding from …]
           </p>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-
-  <!-- ============================ LAB MEMBERS ============================ -->
-  <section class="alt-section">
-    <div class="container">
-      <div class="section-intro">
-        <span class="eyebrow">Lab members</span>
-        <h2>Postdocs, students, and staff</h2>
-      </div>
-
-      <!--
+</div>
+</article>
+</div>
+</section>
+<!-- ============================ LAB MEMBERS ============================ -->
+<section class="alt-section">
+<div class="container">
+<div class="section-intro">
+<span class="eyebrow">Lab members</span>
+<h2>Postdocs, students, and staff</h2>
+</div>
+<!--
         EDIT: Each <article class="member-card"> below is one person.
               To add a new member, copy one of the blocks and paste it before
               the closing </div> tag. To remove someone, delete their block.
@@ -102,100 +149,106 @@
               <img class="member-photo" src="assets/firstname.jpg" alt="Name" />
               (the same circular styling will apply).
       -->
-      <div class="team-grid">
+<div class="team-grid">
+<article class="member-card">
+<div class="member-photo"><img src="assets/Kehinde-Fasae-2.webp" alt="Kehinde (Kenny) D. Fasae, PhD."></div>
+<h3 class="member-name">Kehinde (Kenny) D. Fasae, PhD.</h3>
+<span class="member-role">Postdoctoral Fellow &amp; Lab Manager</span>
+<p class="member-bio is-collapsed">
+            During my doctoral studies at UT Knoxville, I focused on the neurological implications of flavivirus infection, investigating how neurotropic viruses impact the central nervous system. Currently, my research bridges the gap between basic virology and clinical application by exploring siRNA-based therapeutics against both RNA and DNA viruses. I am particularly interested in developing targeted treatments against viral infections and ultimately the chronic diseases they trigger.
 
-        <article class="member-card">
-          <div class="member-photo"><span>AB</span></div>
-          <h3 class="member-name">Member Name</h3>
-          <span class="member-role">Postdoctoral Fellow</span>
-          <p class="member-bio">
+            As the Lab Manager, I also oversee daily operations and projects, ensuring our team has the resources and organization needed to push the boundaries of RNA therapeutics.
+
+            When I’m not in the lab or managing projects, you can find me in church, on the soccer field, singing, or locked in a competitive game of chess.
+          </p>
+<button class="bio-toggle is-hidden" type="button" aria-expanded="false">… Show more</button>
+</article>
+<article class="member-card">
+<div class="member-photo"><span><img src="assets/IMG_0908.jpeg" alt=""></span></div>
+<h3 class="member-name">Prince J. Mosley</h3>
+<span class="member-role">Graduate Student</span>
+<p class="member-bio is-collapsed">
+            I am a PhD student at Morehouse School of Medicine, a part of the Graduate Education in Biomedical Sciences (GEBS) department. I graduated from Tuskegee University with a B.S. in Health Science and minor in Sociology & Health Disparities Research. My current work in Dr. Keivan Zandi’s lab seeks to prevent the transmission of a deadly congenital virus using novel RNAi therapeutics by targeting the placenta, positively impacting the lives of thousands of families. My future aspirations are to pursue a postdoctoral position where I can further develop my translational research expertise while preparing for leadership roles in regulatory science, health policy, and women’s reproductive health advocacy.
+          </p>
+<button class="bio-toggle is-hidden" type="button" aria-expanded="false">… Show more</button>
+</article>
+<article class="member-card">
+<div class="member-photo"><span><img src="assets/headshot-morehouse1.jpg" alt=""></span></div>
+<h3 class="member-name">Kiara (Williams)</h3>
+<span class="member-role">Research Assistant</span>
+<p class="member-bio is-collapsed">
+            I hold a Master of Biotechnology degree with an academic background spanning both psychology and biomedical science. My research interests include virology, immunology, molecular biology, and RNA therapeutics, with a broader interest in developing treatments and scientific solutions that improve quality of life for individuals living with chronic, infectious, and difficult-to-treat diseases.
+
+            My current research focuses on investigating the effects of particulate matter exposure on cellular responses and viral susceptibility using mammalian cell culture models. In the lab, I work with techniques including siRNA transfection, RNA isolation, cDNA synthesis, and RT-qPCR while contributing to projects involving viral infection models and environmental stressors. I previously completed an internship in analytical development within the biotechnology industry, where I gained experience in scientific data analysis and regulated laboratory workflows.
+
+            Outside of the lab, I enjoy photography, hiking, traveling, music, language learning, and spending time with family and my cat, Judy.
+          </p>
+<button class="bio-toggle is-hidden" type="button" aria-expanded="false">… Show more</button>
+</article>
+<article class="member-card">
+<div class="member-photo"><span><img src="assets/IMG_0034.jpg" alt=""></span></div>
+<h3 class="member-name">Oumar Diallo</h3>
+<span class="member-role">Undergraduate Intern</span>
+<p class="member-bio is-collapsed">
+            I am an undergraduate premed student in biology at Georgia State University. I have an interest in virology, genomics, pathology, cancer research, nutrition, and human health. I am very passionate about understanding how molecular and genetic processes contribute to disease. I have hopes that my research will aid in my pursuit to attend medical school and become a physician who combines clinical care with biomedical research. Outside of the lab, I am interested in fitness, nutrition, and preventive health, with a strong focus on helping others live longer, healthier lives. I enjoy many things competitive, and I hope my pursuit to become the best physician I can be will better the world.
+          </p>
+<button class="bio-toggle is-hidden" type="button" aria-expanded="false">… Show more</button>
+</article>
+<article class="member-card">
+<div class="member-photo"><span>DH</span></div>
+<h3 class="member-name">David Hudgins</h3>
+<span class="member-role">Undergraduate Intern</span>
+<p class="member-bio is-collapsed">
             One to two sentences about their background and research interests.
             Replace this placeholder text with real content.
           </p>
-        </article>
-
-        <article class="member-card">
-          <div class="member-photo"><span>CD</span></div>
-          <h3 class="member-name">Member Name</h3>
-          <span class="member-role">Graduate Student</span>
-          <p class="member-bio">
-            One to two sentences about their background and research interests.
-            Replace this placeholder text with real content.
-          </p>
-        </article>
-
-        <article class="member-card">
-          <div class="member-photo"><span>EF</span></div>
-          <h3 class="member-name">Member Name</h3>
-          <span class="member-role">Research Assistant</span>
-          <p class="member-bio">
-            One to two sentences about their background and research interests.
-            Replace this placeholder text with real content.
-          </p>
-        </article>
-
-        <article class="member-card">
-          <div class="member-photo"><span>GH</span></div>
-          <h3 class="member-name">Member Name</h3>
-          <span class="member-role">Undergraduate Intern</span>
-          <p class="member-bio">
-            One to two sentences about their background and research interests.
-            Replace this placeholder text with real content.
-          </p>
-        </article>
-
-        <article class="member-card">
-          <div class="member-photo"><span>IJ</span></div>
-          <h3 class="member-name">Member Name</h3>
-          <span class="member-role">Lab Manager</span>
-          <p class="member-bio">
-            One to two sentences about their background and research interests.
-            Replace this placeholder text with real content.
-          </p>
-        </article>
-
-        <article class="member-card">
-          <div class="member-photo"><span>KL</span></div>
-          <h3 class="member-name">Member Name</h3>
-          <span class="member-role">Graduate Student</span>
-          <p class="member-bio">
-            One to two sentences about their background and research interests.
-            Replace this placeholder text with real content.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================ ALUMNI (optional) ============================ -->
-  <section>
-    <div class="container-narrow">
-      <span class="eyebrow">Alumni</span>
-      <h2 style="margin-bottom: 1.25rem;">Lab alumni.</h2>
-      <div class="prose">
-        <p>
-          <!-- EDIT: List former lab members here, or remove this whole section if not needed. -->
-          Former members of the Zandi Lab have gone on to positions at &hellip;
+<button class="bio-toggle is-hidden" type="button" aria-expanded="false">… Show more</button>
+</article>
+</div>
+</div>
+</section>
+<!-- ============================ ALUMNI (optional) ============================ -->
+<section>
+<div class="container-narrow">
+<span class="eyebrow">Alumni</span>
+<h2 style="margin-bottom: 1.25rem;">Lab alumni.</h2>
+<div class="prose">
+<p>
+<!-- EDIT: List former lab members here, or remove this whole section if not needed. -->
+          Former members of the Zandi Lab have gone on to positions at …
           To update this list, edit <code>team.html</code>.
         </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============================ FOOTER ============================ -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span>&copy; <span id="year"></span> Zandi Virology Lab · Morehouse School of Medicine</span>
-      <span><a href="contact.html">Contact the lab &rarr;</a></span>
-    </div>
-  </footer>
-
-  <script>
+</div>
+</div>
+</section>
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+<div class="footer-inner">
+<span>© <span id="year"></span> Zandi Virology Lab · Morehouse School of Medicine</span>
+<span><a href="contact.html">Contact the lab →</a></span>
+</div>
+</footer>
+<script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  const bioButtons = document.querySelectorAll('.bio-toggle');
 
+  bioButtons.forEach((button) => {
+    const bio = button.previousElementSibling;
+
+    if (!bio || !bio.classList.contains('member-bio')) return;
+
+    // Only show the button when the bio actually runs past six lines.
+    if (bio.scrollHeight > bio.clientHeight + 2) {
+      button.classList.remove('is-hidden');
+    }
+
+    button.addEventListener('click', () => {
+      const isCollapsed = bio.classList.toggle('is-collapsed');
+      button.setAttribute('aria-expanded', String(!isCollapsed));
+      button.textContent = isCollapsed ? '… Show more' : 'Show less';
+    });
+  });
+
+  </script>
 </body>
 </html>
